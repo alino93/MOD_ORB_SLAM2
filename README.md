@@ -250,3 +250,7 @@ This is the default mode. The system runs in parallal three threads: Tracking, L
 ### Localization Mode
 This mode can be used when you have a good map of your working area. In this mode the Local Mapping and Loop Closing are deactivated. The system localizes the camera in the map (which is no longer updated), using relocalization if needed. 
 
+### 3D point cloud Reconstruction
+1 - Put 'rgb.txt' and 'denth.txt' and 'CameraTrajectory.txt' files in the same folder as generate_registered_pointcloud.py
+2 - Run command: ```python generate_registered_pointcloud.py --downsample 5 --nth 10 rgb.txt depth.txt CameraTrajectory.txt denseMap.ply```
+3 - The denseMap.py could be plotted with meshlab or similar softwares
