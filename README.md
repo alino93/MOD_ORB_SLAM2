@@ -207,9 +207,9 @@ For an RGB-D input from topics `/camera/rgb/image_raw` and `/camera/depth_regist
   rosrun ORB_SLAM2 RGBD PATH_TO_VOCABULARY PATH_TO_SETTINGS_FILE
   ```
 ### 3D point cloud Reconstruction
-1 - Put `rgb.txt` and `denth.txt` and `CameraTrajectory.txt` files in the same folder as `generate_registered_pointcloud.py`
-2 - Run command: ```python generate_registered_pointcloud.py --downsample 5 --nth 10 rgb.txt depth.txt CameraTrajectory.txt denseMap.ply```
-3 - The `denseMap.ply` could be plotted with meshlab or similar softwares
+1. Put `rgb.txt` and `denth.txt` and `CameraTrajectory.txt` files in the same folder as `generate_registered_pointcloud.py`
+2. Run command: ```python generate_registered_pointcloud.py --downsample 5 --nth 10 rgb.txt depth.txt CameraTrajectory.txt denseMap.ply```
+3. The `denseMap.ply` could be plotted with meshlab or similar softwares
 
 # 8. Processing your own sequences
 You will need to create a settings file with the calibration of your camera. See the settings file provided for the TUM and KITTI datasets for monocular, stereo and RGB-D cameras. We use the calibration model of OpenCV. See the examples to learn how to create a program that makes use of the ORB-SLAM2 library and how to pass images to the SLAM system. Stereo input must be synchronized and rectified. RGB-D input must be synchronized and depth registered.
