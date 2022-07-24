@@ -211,6 +211,10 @@ For an RGB-D input from topics `/camera/rgb/image_raw` and `/camera/depth_regist
 2. Run command: ```python generate_registered_pointcloud.py --downsample 5 --nth 10 rgb.txt depth.txt CameraTrajectory.txt denseMap.ply```
 3. The `denseMap.ply` could be plotted with meshlab or similar softwares
 
+### Useful RGB-D tools
+
+https://vision.in.tum.de/data/datasets/rgbd-dataset/tools#relative_pose_error_rpe
+
 # 8. Processing your own sequences
 You will need to create a settings file with the calibration of your camera. See the settings file provided for the TUM and KITTI datasets for monocular, stereo and RGB-D cameras. We use the calibration model of OpenCV. See the examples to learn how to create a program that makes use of the ORB-SLAM2 library and how to pass images to the SLAM system. Stereo input must be synchronized and rectified. RGB-D input must be synchronized and depth registered.
 
