@@ -63,6 +63,18 @@ We use the new thread and chrono functionalities of C++11.
 
 ## Pangolin
 We use [Pangolin](https://github.com/stevenlovegrove/Pangolin) for visualization and user interface. Dowload and install instructions can be found at: https://github.com/stevenlovegrove/Pangolin.
+**** USE PANGOLIN v0.5 or v0.6:
+```
+git clone --recursive https://github.com/stevenlovegrove/Pangolin.git -b v0.5
+```
+* OpenGL (Desktop / ES / ES2)
+  * (lin) `sudo apt install libgl1-mesa-dev`
+
+* Glew
+  * (deb) `sudo apt install libglew-dev`
+
+* CMake (for build environment)
+  * (deb) `sudo apt install cmake`
 
 ## OpenCV
 We use [OpenCV](http://opencv.org) to manipulate images and features. Dowload and install instructions can be found at: http://opencv.org. **Required at leat 2.4.3. Tested with OpenCV 2.4.11 and OpenCV 3.2**.
