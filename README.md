@@ -211,7 +211,7 @@ For an RGB-D input from topics `/camera/rgb/image_raw` and `/camera/depth_regist
   rosrun ORB_SLAM2 RGBD PATH_TO_VOCABULARY PATH_TO_SETTINGS_FILE
   ```
 ### 3D point cloud Reconstruction
-1. Put `rgb.txt` and `denth.txt` and `CameraTrajectory.txt` files in the same folder as `generate_registered_pointcloud.py`
+1. Put `rgb.txt` and `depth.txt` and `CameraTrajectory.txt` files in the same folder as `generate_registered_pointcloud.py`
 2. Run command: ```python generate_registered_pointcloud.py --downsample 5 --nth 10 rgb.txt depth.txt CameraTrajectory.txt denseMap.ply```
 3. The `denseMap.ply` could be plotted with meshlab or similar softwares
 
