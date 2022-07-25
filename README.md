@@ -76,8 +76,9 @@ This will create **libORB_SLAM2.so**  at *lib* folder and the executables **mono
 # 4. Monocular Examples
 
 ## RC Dataset
+- Create the sequence with `videToImage.py`
 - Connected the dataset to the computer on a usb
-- Run `./Examples/Monocular/mono_tum Vocabulary/ORBvoc.txt Examples/Monocular/RC.yaml /media/alino/3365-3132/dataset1/`
+- Run `./Examples/Monocular/mono_tum Vocabulary/ORBvoc.txt Examples/Monocular/RC.yaml /media/alino/3365-3132/dataset2/`
 
 ## TUM Dataset
 
